@@ -1,0 +1,503 @@
+/* Episodes Page Styles */
+
+.episodes-header {
+    background: linear-gradient(135deg, var(--fraggle-orange), var(--radish-purple));
+}
+
+.streaming-badges {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    margin-top: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+.streaming-badges .badge {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    color: var(--white);
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.streaming-badges .badge i {
+    font-size: 1.25rem;
+}
+
+/* Quick Stats */
+.quick-stats {
+    padding: var(--spacing-xl) 0;
+    background: var(--white);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.stat-card {
+    background: var(--light-bg);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    transition: all var(--transition-medium);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+    color: var(--fraggle-orange);
+    margin-bottom: var(--spacing-sm);
+}
+
+.stat-number {
+    font-family: 'Fredoka One', cursive;
+    font-size: 3rem;
+    color: var(--dark-text);
+    margin-bottom: var(--spacing-xs);
+}
+
+.stat-label {
+    font-weight: 700;
+    color: var(--medium-gray);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.875rem;
+}
+
+.stat-detail {
+    color: var(--medium-gray);
+    font-size: 0.875rem;
+    margin-top: var(--spacing-xs);
+}
+
+/* Series Navigation */
+.series-nav {
+    background: var(--white);
+    padding: var(--spacing-md) 0;
+    margin-bottom: var(--spacing-xl);
+    position: sticky;
+    top: 70px;
+    z-index: 100;
+    box-shadow: var(--shadow-sm);
+}
+
+.series-nav-links {
+    display: flex;
+    gap: var(--spacing-sm);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Season Selector */
+.season-selector {
+    display: flex;
+    gap: var(--spacing-sm);
+    justify-content: center;
+    margin-bottom: var(--spacing-xl);
+    flex-wrap: wrap;
+}
+
+.season-btn {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--radius-md);
+    background: var(--light-bg);
+    color: var(--dark-text);
+    border: 2px solid var(--light-gray);
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.season-btn:hover {
+    background: var(--fraggle-orange);
+    color: var(--white);
+    border-color: var(--fraggle-orange);
+    transform: translateY(-2px);
+}
+
+.season-btn.active {
+    background: var(--fraggle-orange);
+    color: var(--white);
+    border-color: var(--fraggle-orange);
+}
+
+/* Season Container */
+.season-container {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.season-header {
+    margin-bottom: var(--spacing-xl);
+    text-align: center;
+}
+
+.season-header h3 {
+    color: var(--dark-text);
+    margin-bottom: var(--spacing-xs);
+}
+
+.season-header p {
+    color: var(--medium-gray);
+}
+
+/* Episodes Grid */
+.episodes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Episode Card */
+.episode-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-medium);
+    display: flex;
+    gap: var(--spacing-md);
+    position: relative;
+    overflow: hidden;
+}
+
+.episode-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--rainbow-gradient);
+}
+
+.episode-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.episode-card.placeholder {
+    background: linear-gradient(135deg, var(--light-bg) 0%, var(--rock-crystal) 100%);
+    border: 2px dashed var(--light-gray);
+    display: block;
+    padding: var(--spacing-xl);
+}
+
+.episode-card.placeholder::before {
+    display: none;
+}
+
+.episode-number {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background: var(--fraggle-orange);
+    color: var(--white);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5rem;
+}
+
+.episode-content {
+    flex: 1;
+}
+
+.episode-content h4 {
+    color: var(--dark-text);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.25rem;
+}
+
+.episode-meta {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+    flex-wrap: wrap;
+}
+
+.air-date {
+    font-size: 0.875rem;
+    color: var(--medium-gray);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.episode-summary {
+    color: var(--medium-gray);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+}
+
+.episode-tags {
+    display: flex;
+    gap: var(--spacing-xs);
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: var(--rock-crystal);
+    color: var(--fraggle-orange);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Reboot Card */
+.reboot-card {
+    border-left: 4px solid var(--outer-space-blue);
+}
+
+.reboot-card::before {
+    background: linear-gradient(180deg, var(--outer-space-blue), #95E1D3);
+}
+
+.reboot-card .episode-number {
+    background: var(--outer-space-blue);
+}
+
+/* Reboot Section */
+.reboot-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+    align-items: center;
+}
+
+.reboot-content h3 {
+    margin-bottom: var(--spacing-md);
+}
+
+.reboot-stats {
+    display: grid;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-lg);
+}
+
+.reboot-stat {
+    background: var(--light-bg);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-sm);
+    border-left: 3px solid var(--outer-space-blue);
+}
+
+.reboot-stat strong {
+    color: var(--outer-space-blue);
+}
+
+.reboot-image .image-placeholder {
+    background: linear-gradient(135deg, var(--outer-space-blue), #95E1D3);
+}
+
+/* Where to Watch Section */
+.where-to-watch-section {
+    background: var(--light-bg);
+}
+
+.streaming-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-xl);
+}
+
+.streaming-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-medium);
+}
+
+.streaming-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+}
+
+.streaming-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: var(--radius-round);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-lg);
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.streaming-icon.apple {
+    background: linear-gradient(135deg, #000000, #333333);
+}
+
+.streaming-icon.hbo {
+    background: linear-gradient(135deg, #6B35FF, #9D5CFF);
+}
+
+.streaming-icon.physical {
+    background: linear-gradient(135deg, var(--doozer-green), #5CDB95);
+}
+
+.streaming-card h3 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.streaming-desc {
+    color: var(--medium-gray);
+    margin-bottom: var(--spacing-lg);
+}
+
+.streaming-features {
+    margin-bottom: var(--spacing-lg);
+    text-align: left;
+}
+
+.streaming-features .feature {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-xs) 0;
+    color: var(--medium-gray);
+}
+
+.streaming-features .feature i {
+    color: var(--doozer-green);
+}
+
+.streaming-card .btn {
+    width: 100%;
+}
+
+/* Featured Episodes */
+.featured-episodes {
+    background: var(--white);
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.featured-card {
+    background: var(--light-bg);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    position: relative;
+    transition: all var(--transition-medium);
+}
+
+.featured-card:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-md);
+}
+
+.featured-badge {
+    position: absolute;
+    top: -10px;
+    right: var(--spacing-md);
+    background: var(--fraggle-orange);
+    color: var(--white);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.featured-card h4 {
+    margin-bottom: var(--spacing-sm);
+    margin-top: var(--spacing-xs);
+}
+
+.featured-card p {
+    color: var(--medium-gray);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .episodes-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .episode-card {
+        flex-direction: column;
+    }
+    
+    .episode-number {
+        width: 100%;
+        height: 50px;
+    }
+    
+    .reboot-intro {
+        grid-template-columns: 1fr;
+    }
+    
+    .streaming-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .season-selector {
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: var(--spacing-xs);
+    }
+    
+    .season-btn {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .streaming-badges {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .streaming-badges .badge {
+        justify-content: center;
+    }
+}
+
+/* Loading Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
