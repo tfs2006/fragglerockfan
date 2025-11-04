@@ -2503,3 +2503,538 @@ input:focus {
         left: -15px;
     }
 }
+
+
+/* ============================================
+   UNIVERSE PAGE STYLES
+   ============================================ */
+
+/* Page Header */
+.universe-header {
+    background: linear-gradient(135deg, #7B2CBF 0%, #9D4EDD 50%, #C77DFF 100%);
+}
+
+.page-header {
+    padding: var(--spacing-xxl) 0;
+    text-align: center;
+    color: var(--white);
+}
+
+.page-header h1 {
+    font-family: "Fredoka One", cursive;
+    font-size: 3.5rem;
+    color: var(--white);
+    margin-bottom: var(--spacing-sm);
+}
+
+.page-subtitle {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Universe Introduction */
+.universe-intro {
+    padding: var(--spacing-xxl) 0;
+    background: var(--white);
+}
+
+.intro-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.intro-content h2 {
+    font-family: "Fredoka One", cursive;
+    font-size: 2.5rem;
+    color: var(--fraggle-orange);
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+/* World Cards */
+.fraggle-world {
+    border-top: 5px solid var(--fraggle-orange);
+}
+
+.doozer-world {
+    border-top: 5px solid var(--doozer-green);
+}
+
+.gorg-world {
+    border-top: 5px solid var(--gorg-green);
+}
+
+.outer-space-world {
+    border-top: 5px solid var(--outer-space-blue);
+}
+
+.world-header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.world-icon {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.world-header h3 {
+    font-family: "Fredoka One", cursive;
+    font-size: 2rem;
+    color: var(--fraggle-orange);
+    margin-bottom: var(--spacing-xs);
+}
+
+.world-tagline {
+    font-size: 1.1rem;
+    color: var(--radish-purple);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.world-description {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-lg);
+    color: var(--dark-text);
+}
+
+.world-details h4 {
+    font-family: "Fredoka One", cursive;
+    font-size: 1.5rem;
+    color: var(--radish-purple);
+    margin: var(--spacing-lg) 0 var(--spacing-md);
+}
+
+.world-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.world-details li {
+    padding: var(--spacing-sm) 0 var(--spacing-sm) var(--spacing-lg);
+    position: relative;
+    line-height: 1.8;
+}
+
+.world-details li::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: var(--doozer-green);
+    font-size: 1.2rem;
+}
+
+.world-details strong {
+    color: var(--fraggle-orange);
+}
+
+/* Geography Section */
+.geography-section {
+    padding: var(--spacing-xxl) 0;
+    background: linear-gradient(to bottom, var(--light-bg), var(--white));
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.location-card {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-lg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid var(--fraggle-orange);
+}
+
+.location-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.location-card h3 {
+    font-family: "Fredoka One", cursive;
+    font-size: 1.5rem;
+    color: var(--radish-purple);
+    margin-bottom: var(--spacing-md);
+}
+
+.location-card h3 i {
+    color: var(--fraggle-orange);
+    margin-right: var(--spacing-xs);
+}
+
+.location-card p {
+    line-height: 1.8;
+    color: var(--dark-text);
+    margin-bottom: var(--spacing-md);
+}
+
+.location-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-md);
+}
+
+.feature-tag {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: linear-gradient(135deg, var(--doozer-green), #5CDB95);
+    color: var(--white);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Ecosystem Section */
+.ecosystem-section {
+    padding: var(--spacing-xxl) 0;
+    background: var(--white);
+}
+
+.ecosystem-cycle {
+    max-width: 800px;
+    margin: 0 auto var(--spacing-xxl);
+}
+
+.cycle-step {
+    margin-bottom: var(--spacing-xl);
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--rainbow-gradient);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fredoka One", cursive;
+    font-size: 1.8rem;
+    margin: 0 auto var(--spacing-md);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.step-content {
+    background: var(--light-bg);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step-content h3 {
+    font-family: "Fredoka One", cursive;
+    font-size: 1.5rem;
+    color: var(--fraggle-orange);
+    margin-bottom: var(--spacing-sm);
+}
+
+.step-content p {
+    line-height: 1.8;
+    color: var(--dark-text);
+}
+
+.step-arrow {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--radish-purple);
+    margin: var(--spacing-md) 0;
+}
+
+.cycle-complete {
+    color: var(--doozer-green);
+    font-size: 3rem;
+}
+
+.ecosystem-insight {
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(123, 44, 191, 0.1) 100%);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-md);
+    border: 3px solid var(--doozer-green);
+}
+
+.ecosystem-insight h3 {
+    font-family: "Fredoka One", cursive;
+    font-size: 2rem;
+    color: var(--radish-purple);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+}
+
+.ecosystem-insight ul {
+    list-style: none;
+    padding: 0;
+    margin: var(--spacing-md) 0;
+}
+
+.ecosystem-insight li {
+    padding: var(--spacing-sm) 0 var(--spacing-sm) var(--spacing-lg);
+    position: relative;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.ecosystem-insight li::before {
+    content: "🌿";
+    position: absolute;
+    left: 0;
+}
+
+.ecosystem-insight strong {
+    color: var(--fraggle-orange);
+}
+
+.insight-moral {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background: var(--white);
+    border-left: 4px solid var(--fraggle-orange);
+    border-radius: var(--radius-sm);
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+.insight-moral em {
+    color: var(--radish-purple);
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* Flora and Fauna Section */
+.flora-fauna-section {
+    padding: var(--spacing-xxl) 0;
+    background: linear-gradient(to bottom, var(--light-bg), var(--white));
+}
+
+.creatures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.creature-card {
+    background: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.creature-card:hover {
+    transform: scale(1.05);
+}
+
+.creature-card h3 {
+    font-family: "Fredoka One", cursive;
+    font-size: 1.4rem;
+    color: var(--fraggle-orange);
+    margin-bottom: var(--spacing-sm);
+}
+
+.creature-card p {
+    line-height: 1.7;
+    color: var(--dark-text);
+}
+
+/* Time and Seasons Section */
+.time-seasons-section {
+    padding: var(--spacing-xxl) 0;
+    background: var(--white);
+}
+
+.time-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.time-card {
+    background: var(--light-bg);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.time-card h3 {
+    font-family: "Fredoka One", cursive;
+    font-size: 1.6rem;
+    color: var(--radish-purple);
+    margin-bottom: var(--spacing-md);
+}
+
+.time-card h3 i {
+    color: var(--fraggle-orange);
+    margin-right: var(--spacing-xs);
+}
+
+.time-card p {
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+}
+
+.time-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.time-card li {
+    padding: var(--spacing-xs) 0 var(--spacing-xs) var(--spacing-lg);
+    position: relative;
+    line-height: 1.8;
+}
+
+.time-card li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--doozer-green);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.time-card strong {
+    color: var(--fraggle-orange);
+}
+
+/* Mysteries Section */
+.mysteries-section {
+    padding: var(--spacing-xxl) 0;
+    background: linear-gradient(135deg, rgba(123, 44, 191, 0.05) 0%, rgba(78, 205, 196, 0.05) 100%);
+}
+
+.mysteries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.mystery-card {
+    background: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mystery-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.mystery-icon {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.mystery-card h3 {
+    font-family: "Fredoka One", cursive;
+    font-size: 1.4rem;
+    color: var(--radish-purple);
+    margin-bottom: var(--spacing-sm);
+}
+
+.mystery-card p {
+    line-height: 1.8;
+    color: var(--dark-text);
+}
+
+/* Rules and Physics Section */
+.rules-physics-section {
+    padding: var(--spacing-xxl) 0;
+    background: var(--white);
+}
+
+.rules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.rule-card {
+    background: linear-gradient(135deg, var(--light-bg) 0%, var(--white) 100%);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    border: 2px solid var(--doozer-green);
+    transition: transform 0.3s ease;
+}
+
+.rule-card:hover {
+    transform: scale(1.03);
+}
+
+.rule-card h3 {
+    font-family: "Fredoka One", cursive;
+    font-size: 1.5rem;
+    color: var(--fraggle-orange);
+    margin-bottom: var(--spacing-md);
+}
+
+.rule-card p {
+    line-height: 1.8;
+    color: var(--dark-text);
+}
+
+/* Universe Page - Mobile Responsive */
+@media (max-width: 968px) {
+    .worlds-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .locations-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .creatures-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .time-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .mysteries-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .rules-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .creatures-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .ecosystem-cycle {
+        padding: 0 var(--spacing-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .page-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .world-header h3 {
+        font-size: 1.7rem;
+    }
+}
