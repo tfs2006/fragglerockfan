@@ -957,3 +957,119 @@ input:focus {
         --light-bg: #FFFFFF;
     }
 }
+
+/* ===== Legal Pages Styles ===== */
+.legal-content {
+    padding: var(--spacing-xxl) 0;
+    background: var(--white);
+}
+
+.legal-text {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--light-bg);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.legal-text h2 {
+    color: var(--fraggle-orange);
+    font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 3px solid var(--doozer-green);
+}
+
+.legal-text h2:first-child {
+    margin-top: 0;
+}
+
+.legal-text h3 {
+    color: var(--radish-purple);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+.legal-text p {
+    color: var(--dark-text);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+    font-size: 1.05rem;
+}
+
+.legal-text ul {
+    margin: var(--spacing-md) 0;
+    padding-left: var(--spacing-xl);
+}
+
+.legal-text li {
+    color: var(--dark-text);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.05rem;
+}
+
+.legal-text li strong {
+    color: var(--fraggle-orange);
+}
+
+.legal-text a {
+    color: var(--radish-purple);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.legal-text a:hover {
+    color: var(--fraggle-orange);
+}
+
+.legal-disclaimer {
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(123, 44, 191, 0.1) 100%);
+    border-left: 4px solid var(--fraggle-orange);
+    padding: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+    border-radius: var(--radius-sm);
+}
+
+.legal-disclaimer p {
+    margin: 0;
+    color: var(--dark-text);
+    font-size: 0.95rem;
+}
+
+.legal-disclaimer strong {
+    color: var(--radish-purple);
+}
+
+.last-updated {
+    color: var(--medium-gray);
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: var(--spacing-sm);
+}
+
+/* Legal Pages - Mobile Responsive */
+@media (max-width: 768px) {
+    .legal-text {
+        padding: var(--spacing-lg);
+    }
+    
+    .legal-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .legal-text h3 {
+        font-size: 1.25rem;
+    }
+    
+    .legal-text p,
+    .legal-text li {
+        font-size: 1rem;
+    }
+}
