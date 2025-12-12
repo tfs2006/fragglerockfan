@@ -21,11 +21,14 @@
     <meta property="og:description" content="Explore the magical world of Fraggle Rock with comprehensive character guides, episode databases, and 190+ songs!">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://fragglerockfan.com">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/en/b/bc/Gobo_Fraggle%2C_fictional_character_from_Fraggle_Rock%2C_1983.webp">
+    <meta property="og:site_name" content="FraggleRockFan.com">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Fraggle Rock Fan: Ultimate Characters, Episodes & Music Guide">
     <meta name="twitter:description" content="Explore the magical world of Fraggle Rock!">
+    <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/en/b/bc/Gobo_Fraggle%2C_fictional_character_from_Fraggle_Rock%2C_1983.webp">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://fragglerockfan.com/">
@@ -41,7 +44,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
     
-    <!-- Structured Data -->
+    <!-- Structured Data - Website -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -53,6 +56,40 @@
         "@type": "SearchAction",
         "target": "https://fragglerockfan.com/search?q={search_term_string}",
         "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <!-- Structured Data - Organization for GEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "FraggleRockFan.com",
+      "url": "https://fragglerockfan.com",
+      "description": "The ultimate fan resource for Jim Henson's Fraggle Rock, featuring comprehensive character guides, episode databases, and music catalogs.",
+      "foundingDate": "2024",
+      "knowsAbout": ["Fraggle Rock", "Jim Henson", "Muppets", "Puppetry", "Children's Television", "Doozers", "Gorgs"]
+    }
+    </script>
+    
+    <!-- Structured Data - Speakable for Voice Search/AI -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Fraggle Rock Fan - Ultimate Guide",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".hero-content", ".page-subtitle", "h1", "h2"]
+      },
+      "mainEntity": {
+        "@type": "TVSeries",
+        "name": "Fraggle Rock",
+        "description": "Fraggle Rock is a musical puppet comedy television series created by Jim Henson. It premiered on HBO on January 10, 1983, and ran for five seasons with 96 episodes until March 30, 1987. The show follows the adventures of the Fraggles, a species of small furry creatures who live in a series of interconnected caves called Fraggle Rock.",
+        "creator": "Jim Henson",
+        "numberOfSeasons": 5,
+        "numberOfEpisodes": 96
       }
     }
     </script>
