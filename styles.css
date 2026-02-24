@@ -231,7 +231,9 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--cave-gradient);
+    background:
+        linear-gradient(rgba(10, 5, 25, 0.58), rgba(10, 5, 25, 0.58)),
+        url('/assets/images/Homepage%20hero%20panorama.jpg') center / cover no-repeat;
     color: var(--white);
     text-align: center;
     padding: var(--spacing-xxl) var(--spacing-md);
