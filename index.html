@@ -327,6 +327,24 @@
         </div>
     </section>
 
+    <!-- Community Rankings Section -->
+    <section class="rankings-section" id="community-rankings">
+        <div class="container">
+            <div class="section-header">
+                <h2>🏆 Fan Favourite Episodes</h2>
+                <p class="section-subtitle">Ranked by the Fraggle Rock community in real time — cast your vote on the Episodes page</p>
+            </div>
+            <div id="rankings-list" class="rankings-list">
+                <div class="rankings-empty">
+                    <p>Loading rankings… <a href="episodes.html">rate an episode</a> to get things started!</p>
+                </div>
+            </div>
+            <div class="rankings-cta">
+                <a href="episodes.html" class="btn btn-primary btn-large">Rate All 96 Episodes →</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Themes Section -->
     <section class="themes-section">
         <div class="container">
@@ -431,5 +449,9 @@
 
     <!-- Scripts -->
     <script src="script.js"></script>
+    <!-- Firebase & Community Rankings -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <script src="rankings.js"></script>
 </body>
 </html>
