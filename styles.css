@@ -33,6 +33,9 @@
     /* Gradient Backgrounds */
     --cave-gradient: linear-gradient(135deg, #4A4A4A 0%, #2D3748 100%);
     --rainbow-gradient: linear-gradient(135deg, #FF6B35 0%, #F7931E 25%, #FFD700 50%, #00B388 75%, #7B2CBF 100%);
+
+    /* Alias for compatibility */
+    --bg-light: #F9FAFB;
     
     /* Spacing */
     --spacing-xs: 0.5rem;
@@ -4781,5 +4784,122 @@ video {
     
     .btn-group .btn {
         width: 100%;
+    }
+}
+
+/* =============================================
+   New Page & Component Additions
+   ============================================= */
+
+/* Footer-content: desktop grid (alias of footer-grid) */
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+}
+
+.footer-section h3 {
+    color: var(--white);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.125rem;
+    font-family: 'Fredoka One', cursive;
+}
+
+/* ===== Section-Specific Page Header Colours ===== */
+
+/* About / History — deep indigo-navy */
+.about-header {
+    background: linear-gradient(135deg, #2D1B69 0%, #1A1040 50%, #2D3748 100%);
+}
+
+/* Episodes — deep teal-ocean */
+.episodes-header {
+    background: linear-gradient(135deg, #0C4A6E 0%, #0E7490 50%, #164E63 100%);
+}
+
+/* Characters — warm orange-ember */
+.characters-header {
+    background: linear-gradient(135deg, #7C2D12 0%, #C2410C 50%, #9A3412 100%);
+}
+
+/* Guide pages (comparison, best-episodes, postcards, international) — terracotta-earthy */
+.guides-header {
+    background: linear-gradient(135deg, #431407 0%, #7C2D12 50%, #92400E 100%);
+}
+
+/* ===== Pull Quote ===== */
+.pull-quote {
+    border-left: 5px solid var(--fraggle-orange);
+    background: linear-gradient(135deg, #FFF5EE 0%, #FFFBF8 100%);
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    font-size: 1.2rem;
+    font-family: 'Fredoka One', cursive;
+    color: var(--cave-stone);
+}
+
+.pull-quote p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: 'Fredoka One', cursive;
+    color: var(--cave-stone);
+    line-height: 1.5;
+}
+
+.pull-quote cite {
+    display: block;
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--fraggle-orange);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ===== Callout Box ===== */
+.callout-box {
+    background: linear-gradient(135deg, #E6FBF6 0%, #CCFBEE 100%);
+    border: 2px solid var(--doozer-green);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+}
+
+.callout-box h4 {
+    color: var(--doozer-green);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.2rem;
+}
+
+.callout-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* ===== Responsive table wrapper ===== */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 2rem 0;
+    border-radius: var(--radius-sm);
+}
+
+.table-responsive table {
+    min-width: 580px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .pull-quote {
+        font-size: 1.05rem;
+        padding: 1rem 1.25rem;
     }
 }
