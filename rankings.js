@@ -18,12 +18,12 @@
 //  REPLACE THE VALUES BELOW WITH YOUR FIREBASE PROJECT CONFIG
 // ================================================================
 const FIREBASE_CONFIG = {
-    apiKey:            "YOUR_API_KEY",
-    authDomain:        "YOUR_PROJECT_ID.firebaseapp.com",
-    projectId:         "YOUR_PROJECT_ID",
-    storageBucket:     "YOUR_PROJECT_ID.appspot.com",
-    messagingSenderId: "YOUR_SENDER_ID",
-    appId:             "YOUR_APP_ID"
+    apiKey:            "AIzaSyB50CWOewA5gW40Zka4rNWaZVPORSxggLY",
+    authDomain:        "fragglerockfan-4ce34.firebaseapp.com",
+    projectId:         "fragglerockfan-4ce34",
+    storageBucket:     "fragglerockfan-4ce34.firebasestorage.app",
+    messagingSenderId: "552561439117",
+    appId:             "1:552561439117:web:6f5c2c3980efef448c4dc4"
 };
 // ================================================================
 
