@@ -50,6 +50,13 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+
+    <url>
+        <loc>https://fragglerockfan.com/fraggle-rock-cast.html</loc>
+        <lastmod>2026-03-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
     
     <url>
         <loc>https://fragglerockfan.com/community.html</loc>
