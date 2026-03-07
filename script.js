@@ -53,37 +53,18 @@ document.addEventListener('DOMContentLoaded', function() {
         lastScroll = currentScroll;
     });
     
-    // ===== Logo Easter Egg - Play Theme Song =====
+    // ===== Logo Easter Egg =====
     const logo = document.getElementById('logo');
-    const themeSong = document.getElementById('theme-song');
-    let isPlaying = false;
     
-    if (logo && themeSong) {
+    if (logo) {
         logo.addEventListener('click', function() {
-            if (!isPlaying) {
-                // Note: Audio file needs to be added to assets/audio/fraggle-rock-theme.mp3
-                themeSong.play().catch(function(error) {
-                    console.log('Audio playback failed - add theme song to assets/audio/');
-                    showNotification('🎵 Dance your cares away! (Add theme song to enable playback)');
-                });
-                isPlaying = true;
-                logo.style.animation = 'spin 2s linear';
-                
-                setTimeout(function() {
-                    logo.style.animation = '';
-                }, 2000);
-                
-                showNotification('🎵 Dance your cares away, worries for another day!');
-            } else {
-                themeSong.pause();
-                themeSong.currentTime = 0;
-                isPlaying = false;
-                showNotification('🎵 Theme song paused');
-            }
-        });
-        
-        themeSong.addEventListener('ended', function() {
-            isPlaying = false;
+            logo.style.animation = 'spin 2s linear';
+            
+            setTimeout(function() {
+                logo.style.animation = '';
+            }, 2000);
+            
+            showNotification('Dance your cares away! Explore a featured Fraggle Rock guide from the menu.');
         });
     }
     
@@ -330,9 +311,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // ===== Console Easter Egg =====
-    console.log('%c🎵 Dance your cares away! 🎵', 'color: #FF6B35; font-size: 20px; font-weight: bold;');
+    console.log('%cDance your cares away!', 'color: #FF6B35; font-size: 20px; font-weight: bold;');
     console.log('%cWelcome to FraggleRockFan.com!', 'color: #7B2CBF; font-size: 16px;');
-    console.log('%cClick the logo to play the theme song!', 'color: #00B388; font-size: 14px;');
+    console.log('%cClick the logo for a small animation surprise.', 'color: #00B388; font-size: 14px;');
     console.log('%c"Down at Fraggle Rock!" - Jim Henson', 'color: #4A4A4A; font-size: 12px; font-style: italic;');
     
     // ===== Analytics Placeholder =====

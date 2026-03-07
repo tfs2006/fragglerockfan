@@ -65,3 +65,31 @@ These images were downloaded for possible future use on the site. Verify page co
 - Author: The Jim Henson Company
 - License: Public domain text logo on Commons
 - Note: Commons marks this as PD-textlogo, but trademark restrictions may still apply. Treat this one separately from the CC photo assets.
+
+## 10. dave-goelz-portrait-may-2018-cc-by-sa-3.0.jpg
+- Subject: Dave Goelz portrait, May 2018
+- Source page: https://commons.wikimedia.org/wiki/File:Dave_Goelz_May_2018.jpg
+- Direct file URL: https://upload.wikimedia.org/wikipedia/commons/9/96/Dave_Goelz_May_2018.jpg
+- Author: Barbara Stenson
+- License: CC BY-SA 3.0
+
+## 11. dave-goelz-portrait-cc-by-sa-4.0.jpg
+- Subject: Dave Goelz portrait
+- Source page: https://commons.wikimedia.org/wiki/File:Dave_Goelz.jpg
+- Direct file URL: https://upload.wikimedia.org/wikipedia/commons/1/13/Dave_Goelz.jpg
+- Author: WaverlyMarie
+- License: CC BY-SA 4.0
+
+## 12. steve-whitmire-florida-supercon-2018-cc-by-2.0.jpg
+- Subject: Steve Whitmire at Florida Supercon 2018
+- Source page: https://commons.wikimedia.org/wiki/File:Steve_Whitmire_(43196418724).jpg
+- Direct file URL: https://upload.wikimedia.org/wikipedia/commons/e/e2/Steve_Whitmire_%2843196418724%29.jpg
+- Author: Super Festivals from Ft. Lauderdale, USA
+- License: CC BY 2.0
+
+## 13. steve-whitmire-white-house-2014-public-domain.jpg
+- Subject: Steve Whitmire at the White House screening of Muppets Most Wanted, 2014
+- Source page: https://commons.wikimedia.org/wiki/File:Steve_Whitmire_2014.jpg
+- Direct file URL: https://upload.wikimedia.org/wikipedia/commons/b/b4/Steve_Whitmire_2014.jpg
+- Author: Chairman of the Joint Chiefs of Staff
+- License: Public domain

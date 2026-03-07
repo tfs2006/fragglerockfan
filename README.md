@@ -44,7 +44,7 @@ Fraggle_Rock_Fan/
 ├── characters.js          # Character page interactions
 ├── assets/
 │   ├── audio/
-│   │   └── fraggle-rock-theme.mp3  # Theme song for Easter egg
+│   │   └── README.md               # Notes for any properly licensed audio assets
 │   ├── images/
 │   │   └── [character and show images]
 │   └── fonts/
@@ -120,12 +120,15 @@ The website uses an authentic Fraggle Rock-inspired color system:
    - Navigate to `http://localhost:8000` (or your server's address)
    - The homepage will load with full functionality
 
-### Adding the Theme Song Easter Egg
+### Audio and Media Compliance
 
-1. Download a legal copy of the Fraggle Rock theme song (MP3 format)
-2. Create the directory: `assets/audio/`
-3. Place the file as: `assets/audio/fraggle-rock-theme.mp3`
-4. Click the logo on any page to hear the theme!
+Do not upload copyrighted show audio, episode video, or other rights-controlled media files unless you have explicit permission or a valid license to publish them on the site.
+
+If you want an interactive audio feature in the future, use one of these approaches instead:
+
+1. Use a fully licensed original sound effect or music cue.
+2. License a royalty-free track that matches the site's tone.
+3. Replace audio with a visual-only interaction or animation.
 
 ---
 
@@ -194,7 +197,7 @@ The website uses an authentic Fraggle Rock-inspired color system:
 
 ### Easter Eggs
 
-1. **Logo Click**: Click the FraggleRockFan logo to play the theme song
+1. **Logo Click**: Click the FraggleRockFan logo for a small visual surprise
 2. **Console Messages**: Check the browser console for hidden messages
 3. **Character Hover Effects**: Interactive animations on character cards
 4. **Notification System**: Friendly notifications for user actions

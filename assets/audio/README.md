@@ -1,15 +1,19 @@
 # Audio Assets
 
-Place the Fraggle Rock theme song here:
+This directory is reserved for audio assets you have the right to publish on the live site.
 
-- `fraggle-rock-theme.mp3` - Main theme song for the logo Easter egg
+## Allowed Uses
 
-## Legal Notice
+- Original audio created for this website
+- Royalty-free audio with commercial web-use permission
+- Properly licensed audio files with documentation you can produce on request
 
-Ensure you have the rights to use any audio files. The theme song is copyrighted by The Jim Henson Company. This should only be used for educational/fan purposes under fair use.
+## Do Not Upload
 
-## Source Recommendations
+- Full Fraggle Rock theme-song recordings
+- Episode audio clips
+- Any copyrighted soundtrack material without explicit publishing rights
 
-- Purchase from official sources
-- Use royalty-free alternatives for commercial deployment
-- Consider licensing if needed
+## Recommended Approach
+
+For ad-supported deployment, prefer licensed original sounds or remove audio features entirely.
