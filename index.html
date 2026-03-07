@@ -150,6 +150,24 @@
                 <a href="episodes.html" class="btn btn-secondary">Watch Guide</a>
                 <a href="best-episodes.html" class="btn btn-glass">Start with the Best Episodes</a>
             </div>
+            <section class="hero-audio-panel animate-fade-in-delay-2" aria-labelledby="original-song-title">
+                <div class="hero-audio-copy">
+                    <p class="hero-audio-kicker">Original site song</p>
+                    <h2 id="original-song-title">Where the Bright Songs Glow</h2>
+                    <p class="hero-audio-description">Streaming the site owner's original song for this website. This track is used in place of any Fraggle Rock theme recording.</p>
+                    <p class="hero-audio-legal">Rights note: this MP3 is owned by the site owner and cleared for use on this site.</p>
+                </div>
+                <div class="hero-audio-controls">
+                    <button type="button" class="audio-toggle" id="audio-toggle" aria-controls="site-song-audio lyrics-ticker" aria-pressed="false">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                        <span>Play Song</span>
+                    </button>
+                    <p class="audio-status" id="audio-status">Ready to play</p>
+                    <audio id="site-song-audio" preload="metadata">
+                        <source src="assets/audio/Where%20the%20Bright%20Songs%20Glow.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </section>
             <div class="hero-spotlights animate-fade-in-delay-2" aria-label="Featured guide highlights">
                 <a href="best-episodes.html" class="hero-spotlight">
                     <span class="hero-spotlight-label">Quick Start</span>
@@ -169,6 +187,10 @@
             <i class="fas fa-chevron-down"></i>
         </div>
     </header>
+
+    <div class="lyrics-ticker" id="lyrics-ticker" aria-hidden="true">
+        <div class="lyrics-track" id="lyrics-track"></div>
+    </div>
 
     <!-- Jim Henson's Vision Section -->
     <section class="vision-section">

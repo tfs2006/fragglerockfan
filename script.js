@@ -182,6 +182,77 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+
+    // ===== Original Song Player =====
+    const audioToggle = document.getElementById('audio-toggle');
+    const siteSongAudio = document.getElementById('site-song-audio');
+    const audioStatus = document.getElementById('audio-status');
+    const lyricsTicker = document.getElementById('lyrics-ticker');
+    const lyricsTrack = document.getElementById('lyrics-track');
+
+    if (audioToggle && siteSongAudio && audioStatus && lyricsTicker && lyricsTrack) {
+        const lyricsSegments = [
+            'When the long day fades and the lights get low, there’s a little place where the good hearts go.',
+            'Take a step, take a spin, let the wonder start, every tiny echo wakes a happy heart.',
+            'Sing it out where the bright songs glow, bring your grin and your get-up-and-go.',
+            'Round and round let the warm winds blow, we’re alive where the bright songs glow.',
+            'Every little light helps the big light grow, come along, let your true self show.',
+            'Build a dream, make a beat, let the rhythm rise, turn a little spark into big surprise.',
+            'When the night feels deep and the path seems far, we can light it up with the songs we are.',
+            'Welcome home where the bright songs glow.'
+        ];
+
+        const tickerMarkup = lyricsSegments
+            .map(function(line) {
+                return '<span class="lyrics-chip">' + line + '</span>';
+            })
+            .join('');
+
+        lyricsTrack.innerHTML = tickerMarkup + tickerMarkup;
+
+        function setAudioState(isPlaying) {
+            const icon = audioToggle.querySelector('i');
+            const label = audioToggle.querySelector('span');
+
+            audioToggle.setAttribute('aria-pressed', String(isPlaying));
+            lyricsTicker.classList.toggle('active', isPlaying);
+
+            if (icon) {
+                icon.classList.toggle('fa-play', !isPlaying);
+                icon.classList.toggle('fa-pause', isPlaying);
+            }
+
+            if (label) {
+                label.textContent = isPlaying ? 'Pause Song' : 'Play Song';
+            }
+
+            audioStatus.textContent = isPlaying ? 'Now playing: Where the Bright Songs Glow' : 'Ready to play';
+        }
+
+        audioToggle.addEventListener('click', function() {
+            if (siteSongAudio.paused) {
+                siteSongAudio.play().catch(function() {
+                    audioStatus.textContent = 'Playback was blocked. Press play again to retry.';
+                });
+                return;
+            }
+
+            siteSongAudio.pause();
+        });
+
+        siteSongAudio.addEventListener('play', function() {
+            setAudioState(true);
+        });
+
+        siteSongAudio.addEventListener('pause', function() {
+            setAudioState(false);
+        });
+
+        siteSongAudio.addEventListener('ended', function() {
+            setAudioState(false);
+            audioStatus.textContent = 'Song finished. Play it again anytime.';
+        });
+    }
     
     // ===== Newsletter Form Handling =====
     const newsletterForm = document.querySelector('.newsletter-form');
